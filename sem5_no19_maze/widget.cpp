@@ -79,7 +79,9 @@ void Widget::on_lineEdit_textChanged()
 
 void Widget::on_playButton_clicked()
 {
+    delete rect;
     rect = new PlayPole();
+    delete mouse;
     mouse = new Square();
 
     rect->getLevel(level);
